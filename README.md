@@ -1,5 +1,4 @@
 # LG U+ WHY NOT SW 8기 - 윤예빈
-
 ## 💌 SQL TOY PROJECT
 
 ## 💇‍♀️ 프로젝트 소개
