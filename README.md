@@ -1,5 +1,6 @@
 # LG U+ WHY NOT SW 8기 - 윤예빈
 ## 💌 SQL TOY PROJECT
+github 주소 : https://github.com/202244003/SQL_ToyProject
 
 ## 💇‍♀️ 프로젝트 소개
 
@@ -570,7 +571,7 @@ DB에서 ORDER BY절을 활용해 선택된 컬럼, 방향 지정하여 정렬
 class StatsFrame(tk.Frame):
 		def sort_stats(self, column):
 				...
-				# SQL 컬럼명 변환
+				# SQL 컬x럼명 변환
         sql_column = self.get_sql_column_name(column)
         order_direction = "DESC" if reverse else "ASC"
 
@@ -596,7 +597,7 @@ DB에서 ORDER BY절을 활용해 선택된 컬럼, 방향 지정하여 정렬
 ```
 
 ---
-### 추가 목표
+## 추가 목표
 
 - 방문 내역 수정 기능
 - 방문 내역 추가 시 다중 결제 기능
