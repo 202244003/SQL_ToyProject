@@ -169,16 +169,26 @@ ON UPDATE CASCADE;
 
 ```bash
 SQL_ToyProject/
+├── 📄 main.py
+├── 📄 main_app.py
+├── 📄 README.md
 │
-├── customer_frame.py    # 고객 목록 및 검색 화면 UI
-├── customer_reg.py      # 고객 등록/수정 화면 UI
-├── db_manager.py        # DB 연결, 쿼리 실행, 데이터 처리 로직
-├── main.py              # 프로그램 시작점 (실행 스크립트)
-├── main_frame.py        # 메인 메뉴 UI (버튼/네비게이션)
-├── main_app.py          # Tkinter App 클래스 (프레임 전환, 전체 레이아웃)
-├── stats_frame.py       # 통계 화면 UI
-├── visit_frame.py       # 방문 내역 및 관리 화면 UI
-└── visit_reg.py         # 방문 등록/수정 화면 UI
+├── 📂 db_connector
+│   └── 📄 db_manager.py
+│
+├── 📂 frame
+│   ├── 📄 customer_frame.py
+│   ├── 📄 main_frame.py
+│   ├── 📄 stats_frame.py
+│   └── 📄 visit_frame.py
+│
+├── 📂 reg
+│   ├── 📄 customer_reg.py
+│   └── 📄 visit_reg.py
+│
+└── 📂 sql
+    └── 📄 Hairsalon_DB.sql
+
 ```
 
 ### 파일 흐름
@@ -208,7 +218,7 @@ db_manager.py  ←  (모든 Frame에서 DB 연결/쿼리 실행 시 사용)
 **고객 검색**
 
 ```python
-# /SQL_ToyProject/customer_frame.py
+# /SQL_ToyProject/frame/customer_frame.py
 
 class CustomerFrame(tk.Frame):
 ...
@@ -248,7 +258,7 @@ ORDER BY로 customer_id를 기준으로 정렬한다.
 **방문 내역 검색**
 
 ```python
-# /SQL_ToyProject/visit_frame.py
+# /SQL_ToyProject/frame/visit_frame.py
 
 class VisitFrame(tk.Frame):
 ...
@@ -302,7 +312,7 @@ ORDER BY로 visit_id를 기준으로 정렬한다.
 **통계 검색**
 
 ```python
-# /SQL_ToyProject/stats_frame.py
+# /SQL_ToyProject/frmae/stats_frame.py
 
 class StatsFrame(tk.Frame):
 		...
@@ -364,7 +374,7 @@ class StatsFrame(tk.Frame):
 **고객 방문 기록 불러오기**
 
 ```python
-# /SQL_ToyProject/customer_frame.py
+# /SQL_ToyProject/frame/customer_frame.py
 
 class CustomerFrame(tk.Frame):
 ...
@@ -391,7 +401,7 @@ GROUP_CONCAT()로 여러 행의 문자열 값을 하나의 문자열로 합친�
 **방문 상세 불러오기**
 
 ```python
-# /SQL_ToyProject/visit_frame.py
+# /SQL_ToyProject/frame/visit_frame.py
 
 class VisitFrame(tk.Frame):
 ...
@@ -423,7 +433,7 @@ class VisitFrame(tk.Frame):
 **고객 정보 등록/수정**
 
 ```python
-# /SQL_ToyProject/customer_reg.py
+# /SQL_ToyProject/reg/customer_reg.py
 
 class CustomerRegistrationDialog:
 ...
@@ -467,7 +477,7 @@ UPDATE를 통해 기존 고객 정보를 수정한다.
 **고객 목록 정렬**
 
 ```python
-# /SQL_ToyProject/customer_frame.py
+# /SQL_ToyProject/frame/customer_frame.py
 
 class CustomerFrame(tk.Frame):
 ...
@@ -521,7 +531,7 @@ DB에서 ORDER BY절을 활용해 선택된 컬럼, 방향 지정하여 정렬
 **방문 목록 정렬**
 
 ```python
-# /SQL_ToyProject/visit_frame.py
+# /SQL_ToyProject/frame/visit_frame.py
 
 class VisitFrame(tk.Frame):
 ...
@@ -555,7 +565,7 @@ DB에서 ORDER BY절을 활용해 선택된 컬럼, 방향 지정하여 정렬
 **통계 정렬**
 
 ```python
-# /SQL_ToyProject/stats_frame.py
+# /SQL_ToyProject/frame/stats_frame.py
 
 class StatsFrame(tk.Frame):
 		def sort_stats(self, column):
