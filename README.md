@@ -10,10 +10,9 @@
 - 방문 내역 관리
 
 ### 사용 기술
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white">
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"> - tkinter
 
-- python
-- tkinter
-- mysql
 
 ### 기능
 
