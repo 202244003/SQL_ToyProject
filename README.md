@@ -168,25 +168,25 @@ ON UPDATE CASCADE;
 
 ```bash
 SQL_ToyProject/
-├── 📄 main.py
-├── 📄 main_app.py
-├── 📄 README.md
+├── 📄 main.py                  # 프로그램 시작점 (실행 스크립트)
+├── 📄 main_app.py              # Tkinter App 클래스
+├── 📄 README.md                # 프로젝트 소개 markdown
 │
 ├── 📂 db_connector
-│   └── 📄 db_manager.py
+│   └── 📄 db_manager.py        # DB 연결, 쿼리 실행, 데이터 처리 로직
 │
 ├── 📂 frame
-│   ├── 📄 customer_frame.py
-│   ├── 📄 main_frame.py
-│   ├── 📄 stats_frame.py
-│   └── 📄 visit_frame.py
+│   ├── 📄 customer_frame.py    # 고객 목록 및 검색 화면 UI
+│   ├── 📄 main_frame.py        # 메인 메뉴 UI (버튼/네비게이션)
+│   ├── 📄 stats_frame.py       # 통계 화면 UI
+│   └── 📄 visit_frame.py       # 방문 내역 및 관리 화면 UI
 │
 ├── 📂 reg
-│   ├── 📄 customer_reg.py
-│   └── 📄 visit_reg.py
+│   ├── 📄 customer_reg.py      # 고객 등록/수정 화면 UI
+│   └── 📄 visit_reg.py         # 방문 등록/수정 화면 UI
 │
 └── 📂 sql
-    └── 📄 Hairsalon_DB.sql
+    └── 📄 Hairsalon_DB.sql     # DB 생성 SQL
 
 ```
 
