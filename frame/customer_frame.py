@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
-from customer_reg import CustomerRegistrationDialog
+from reg.customer_reg import CustomerRegistrationDialog
 
 # 고객 프레임
 class CustomerFrame(tk.Frame):

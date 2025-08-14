@@ -1,10 +1,10 @@
 import tkinter as tk
 from datetime import datetime
-from db_manager import DatabaseManager
-from customer_frame import CustomerFrame
-from main_frame import MainFrame
-from stats_frame import StatsFrame
-from visit_frame import VisitFrame
+from db_connector.db_manager import DatabaseManager
+from frame.customer_frame import CustomerFrame
+from frame.main_frame import MainFrame
+from frame.stats_frame import StatsFrame
+from frame.visit_frame import VisitFrame
 
 
 class MainApp(tk.Tk):
