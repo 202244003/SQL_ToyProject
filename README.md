@@ -77,7 +77,8 @@
 
 ### ERD
 
-![ERD.png](attachment:d0a99fda-8a1e-4ab6-a123-90de195b73f0:ERD.png)
+<img width="612" height="475" alt="ERD" src="https://github.com/user-attachments/assets/7d5ff726-330f-4f2e-bb48-f174a1ab6c33" />
+
 
 ### SQL
 
