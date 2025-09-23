@@ -11,10 +11,10 @@ class DatabaseManager:
     def connect(self):
         try:
             self.connection = mysql.connector.connect(
-                host='localhost',
-                database='hairsalon',
-                user='root',  # 실제 사용자명으로 변경
-                password='swanjessie0909'  # 실제 비밀번호로 변경
+                host='',
+                database='',
+                user='',  # 실제 사용자명으로 변경
+                password=''  # 실제 비밀번호로 변경
             )
             if self.connection.is_connected():
                 print("MySQL 데이터베이스에 연결되었습니다.")
